@@ -13,6 +13,6 @@ before_install:
 
 script:
   - cd imgconv
-#  - docker login --username=${ALIYUN_DOCKER_USER} --password=${ALIYUN_DOCKER_PASSWORD} registry.cn-hangzhou.aliyuncs.com
+  - docker login --username=${ALIYUN_DOCKER_USER} --password=${ALIYUN_DOCKER_PASSWORD} registry.cn-hangzhou.aliyuncs.com
   - docker build --no-cache -t registry.cn-hangzhou.aliyuncs.com/imgconv/imgconv .
-#  - docker push registry.cn-hangzhou.aliyuncs.com/91games/91games-allinone-ci
+  - docker push registry.cn-hangzhou.aliyuncs.com/imgconv/imgconv
